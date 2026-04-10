@@ -119,6 +119,20 @@ nav {
   margin-bottom: 32px;
 }
 
+.hero-sub a,
+.about-text a,
+.result-card a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero-sub a:hover,
+.about-text a:hover,
+.result-card a:hover {
+  text-decoration: underline;
+}
+
 .hero-actions {
   display: flex;
   gap: 12px;
@@ -232,6 +246,15 @@ h2 {
   margin-bottom: 12px;
 }
 
+.timeline-company a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.timeline-company a:hover {
+  text-decoration: underline;
+}
+
 .timeline-content ul {
   list-style: none;
   display: flex;
@@ -260,7 +283,7 @@ h2 {
 /* === Results === */
 .results-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
@@ -434,7 +457,7 @@ footer p {
   }
 
   .results-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .education-grid {
