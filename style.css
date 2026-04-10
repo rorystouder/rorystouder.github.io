@@ -95,6 +95,24 @@ nav {
   margin: 0 auto;
 }
 
+.hero-grid {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-photo img {
+  width: 220px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
 .hero-label {
   font-size: 0.85rem;
   font-weight: 500;
@@ -438,6 +456,20 @@ footer p {
 
   .nav-links {
     display: none;
+  }
+
+  .hero-grid {
+    flex-direction: column-reverse;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .hero-photo img {
+    width: 180px;
+  }
+
+  .hero-actions {
+    justify-content: center;
   }
 
   .about-grid {
